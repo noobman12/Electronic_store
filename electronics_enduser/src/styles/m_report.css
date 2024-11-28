@@ -1,0 +1,105 @@
+﻿.banner-item-view, .menu-item-view, .product-item-view, .news-item-view {
+    display: none !important;
+}
+
+@media (max-width : 1168) {
+    .banner-item a .banner-item-view {
+        display: none !important;
+    }
+
+    a.menu-item-view {
+        display: none !important;
+    }
+
+    .news-item a .news-item-view {
+        display: none !important;
+    }
+}
+/*banner*/
+.banner-item a {
+    position: relative;
+    display: inline-block;
+}
+
+    .banner-item a .banner-item-view {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        border: 1px solid #dfdfdf;
+        border-radius: 3px;
+        padding: 3px 6px;
+        color: #333;
+        font-size: 11px;
+    }
+
+        .banner-item a .banner-item-view b {
+            font-size: 12px;
+        }
+
+/*menu*/
+.v-menu-item a {
+    display: inline-block;
+}
+
+    .v-menu-item a .menu-item-view {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        border: 1px solid #dfdfdf;
+        border-radius: 3px;
+        padding: 3px 6px;
+        color: #333;
+        font-size: 11px;
+    }
+
+        .v-menu-item a .menu-item-view b {
+            font-size: 12px;
+        }
+/*product*/
+a.product-item {
+    position: relative;
+    display: inline-block;
+}
+
+.product-item-view {
+    position: absolute;
+    bottom: 38px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    padding: 3px 6px;
+    color: #333;
+    font-size: 11px;
+}
+
+    .product-item-view b {
+        font-size: 12px;
+    }
+/*news*/
+.news-item a, .news-thumbnail a {
+    position: relative;
+    display: inline-block;
+}
+
+.news-thumbnail-grid a {
+    position: relative;
+}
+
+.news-item-view {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    padding: 3px 6px;
+    color: #333;
+    font-size: 11px;
+}
+
+    .news-item-view b {
+        font-size: 12px;
+    }

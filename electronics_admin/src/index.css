@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border-color: #e2e8f0;
+    border-width: 1px;
+    border-radius: .25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+:where(.css-dev-only-do-not-override-ccdg5a).ant-pagination .ant-pagination-item-active {
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+}
+:where(.css-dev-only-do-not-override-ccdg5a).ant-pagination .ant-pagination-item{
+    background-color: transparent;
+    border: none;
+}
+.dark :where(.css-dev-only-do-not-override-ccdg5a).ant-pagination .ant-pagination-item a,
+.dark .ant-pagination-next svg,
+.dark .ant-pagination-prev svg{
+    color: rgb(156 163 175 );
+}
+:where(.css-dev-only-do-not-override-ccdg5a).ant-pagination .ant-pagination-item a,
+.ant-pagination-next svg,
+.ant-pagination-prev svg{
+    color: #000
+}
+:where(.css-dev-only-do-not-override-ccdg5a).ant-pagination .ant-pagination-item-active a,
+:where(.css-dev-only-do-not-override-ccdg5a).ant-pagination .ant-pagination-item-active a:hover,
+.dark :where(.css-dev-only-do-not-override-ccdg5a).ant-pagination .ant-pagination-item-active a,
+.dark :where(.css-dev-only-do-not-override-ccdg5a).ant-pagination .ant-pagination-item-active a:hover{
+    background-color: #9333ea;
+    border-radius: 10px;
+    color: #fff;
+}
+.anticon svg{
+    color: #9333ea;
+}
+
+:where(.css-dev-only-do-not-override-ccdg5a).ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+    border-color: #9333ea;
+    background-color: #9333ea;
+}
+.ant-form-item > .ant-row {
+    display: block
+}
+.ant-form-item > .ant-row > .ant-col{
+    text-align: left;
+}
+:where(.css-dev-only-do-not-override-ccdg5a).ant-input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border-color: #e2e8f0;
+    border-width: 1px;
+    border-radius: .25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+}
+:where(.css-dev-only-do-not-override-ccdg5a).ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector{
+    border-color: rgb(75 85 99 / var(--tw-border-opacity));
+    background-color: transparent;
+}
+.dark::where(.css-dev-only-do-not-override-ccdg5a).ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector{
+    border-color: #e2e8f0;
+    background-color: transparent;
+}
+:where(.css-dev-only-do-not-override-ccdg5a).ant-select-single.ant-select-show-arrow .ant-select-selection-item, :where(.css-dev-only-do-not-override-ccdg5a).ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder{
+    color: #fff;
+}
+.frm-search :where(.css-dev-only-do-not-override-ccdg5a).ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder{
+    background-color: white;
+    color: #9ca3af;
+}
+:where(.css-dev-only-do-not-override-ccdg5a).ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector{
+    background: #fff;
+    height: 41px;
+    border-color: #d9d9d9;
+}
+:where(.css-dev-only-do-not-override-ccdg5a).ant-select-single.ant-select-show-arrow .ant-select-selection-item{
+    color: #000;
+}
+.dark :where(.css-dev-only-do-not-override-ccdg5a).ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector{
+    background: #4b5563;
+    border-color: inherit;
+}
+.dark :where(.css-dev-only-do-not-override-ccdg5a).ant-select-single.ant-select-show-arrow .ant-select-selection-item{
+    color: #fff;
+}
+:where(.css-dev-only-do-not-override-ccdg5a).ant-btn-variant-solid:not(:disabled):not(.ant-btn-disabled),
+:where(.css-dev-only-do-not-override-ccdg5a).ant-btn-variant-solid:not(:disabled):not(.ant-btn-disabled):hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(126 34 206 / var(--tw-bg-opacity));
+    height: 43px;
+    margin: 0
+}
+.ant-upload-list-item-name{
+    color: #000;
+}
+.dark .ant-upload-list-item-name{
+    color: #fff;
+}
+:where(.css-dev-only-do-not-override-ccdg5a).ant-input-outlined.ant-input-status-error:not(.ant-input-disabled){
+    background-color: transparent !important;
+}
+.dark .frm-search :where(.css-dev-only-do-not-override-ccdg5a).ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+    background: white;
+}
+.dark .fr-search :where(.css-dev-only-do-not-override-ccdg5a).ant-select-single.ant-select-show-arrow .ant-select-selection-item{
+    color: #040404;
+}
+:where(.css-dev-only-do-not-override-ccdg5a).ant-input-outlined.ant-input-status-error:not(.ant-input-disabled){
+    background-color: transparent !important;
+}
+:where(.css-dev-only-do-not-override-ccdg5a).ant-form-item .ant-form-item-explain-error {
+    margin-top: 5px;
+}
+.editor-wrapper {
+    height: 500px; /* Điều chỉnh chiều cao ở đây */
+    border: 1px solid #ccc; /* Tùy chọn, để dễ nhìn */
+}
+.ck.ck-editor__main>.ck-editor__editable{
+    min-height: 500px;
+}

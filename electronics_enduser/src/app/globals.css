@@ -1,0 +1,251 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@/styles/a_default.css";
+/* @import "@/styles/bootstrap.css"; */
+@import "@/styles/i_nav.css";
+@import "@/styles/i_owl.css";
+@import "@/styles/g_fcp.css";
+@import "@/styles/m_banner.css";
+@import "@/styles/m_product_fcp.css";
+@import "@/styles/m_news_fcp.css";
+@import "@/styles/m_report.css";
+@import "@/styles/p_home.css";
+@import "@/styles/p_product.css";
+@import "@/styles/p_order.css";
+
+/*Default Row Col*/
+input, select, textarea{
+  max-width: 100%;
+}
+.form-group.row{
+  margin:  0 -15px;
+}
+.form-group.row .col-6{
+  padding: 0 15px;
+}
+.container-df {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+/*Default Row Col*/
+:root {
+  --swiper-navigation-size: 54px !important;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
+.swiper-button-prev {
+  left: 0;
+  background: url(../images/nav-slide.png) no-repeat 0 0 !important;
+  opacity: 0.3;
+  left: 0 !important;
+}
+.swiper-button-next {
+  right: 0;
+  background: url(../images/nav-slide.png) no-repeat -30px 0 !important;
+  opacity: 0.3;
+  right: 0 !important;
+}
+.banner-list:hover .swiper-button-prev,
+.banner-list:hover .swiper-button-next,
+.product-list:hover .swiper-button-prev,
+.product-list:hover .swiper-button-next {
+  opacity: 1;
+}
+.product-slider .item {
+  float: none !important;
+  width: auto !important;
+  height: auto !important;
+}
+.product-slider .item .card-img-top {
+  text-align: left;
+  height: auto !important;
+}
+.collapse.show {
+  visibility: visible;
+}
+
+.bgcolor-2 {
+  background-color: #000 !important;
+}
+
+/*Subiz*/
+body #wpwidget .widget-layout {
+  right: 10px !important;
+  bottom: 10px !important;
+  z-index: 900 !important;
+}
+
+body #wpwidget .chat-button--img-container {
+  width: 45px !important;
+  height: 45px !important;
+}
+
+body #wpwidget img.chat-button--img {
+  width: 45px !important;
+  height: 45px !important;
+}
+/*Subiz*/
+
+/*Zalo*/
+.zalo-chat-widget {
+  /* display: none !important; */
+  right: 35px !important;
+  bottom: 90px !important;
+  z-index: 900 !important;
+}
+/*Zalo*/
+
+.pd-attribute img {
+  display: none;
+}
+.product-box .product-list {
+  width: 100%;
+}
+.product-box .product-list .card,
+.pList-olw .card {
+  float: none;
+  width: auto;
+  max-width: 100% !important;
+}
+.brand-slider__item a img{
+  height: 80px;
+  object-fit: contain;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Ẩn trên Chrome và Safari */
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Ẩn trên Firefox */
+}
+.Toastify__toast .Toastify__progress-bar--success{
+  background-color: #007ae3;
+}
+.Toastify__toast.Toastify__toast--success svg{
+  fill: #007ae3
+}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.frm-login input{
+  max-width: 280px;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
+  .collapse.show {
+    visibility: visible;
+} 
+}
+
+@media (max-width: 768px) {
+  /*Default Row Col*/
+  .row-0 {
+    display: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .col-0 {
+    display: none !important;
+    width: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  /*Default Row Col*/
+
+  .zalo-chat-widget {
+    right: 10px !important;
+    bottom: 140px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .box-banner {
+    width: 100% !important;
+  }
+  .banner-item{
+    float: none;
+  }
+  .banner-item a {
+    display: block;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
